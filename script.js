@@ -28,6 +28,6 @@ function threeSum(arr, target) {
 				}
 			}
 		}
-		return ans;
+		return "message"+ans;
 }
 module.exports = threeSum;
