@@ -11,20 +11,22 @@ function threeSum(arr, target) {
 						let premin=sum-target;
 						let present=presentsum-target;
 						let minval=Math.min(Math.abs(premin,present));
-					
+						
 						if(minval<least){
-							least=minval;
-								if(minval==premin){
+							if(minval==Math.abs(premin)){
 							ans=sum;
 						}
-						else{
-							ans=presentsum;
+						// else{
+						// 	ans=presentsum;
+						// }
 						}
-						}
-						
-						
+																		
 					}
 					sum=arr[i]+arr[j]+arr[k];
+					if(minval<least){
+						least=minval;
+					}
+					
 				}
 			}
 		}
